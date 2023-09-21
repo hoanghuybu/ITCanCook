@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyOTPActivity">
+
+    <ImageView
+        android:id="@+id/imgView_arrowLeft_verifyOTP"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow___left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="120dp"
+        android:text="Xác nhận OTP"
+        android:textSize="24sp"
+        android:textColor="#0A2533"
+        android:fontFamily="@font/inter_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_comment_forgotPassword"
+        android:layout_width="327dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:text="Chúng tôi đã gửi mã xác nhận về điện thoại bạn. Hãy kiểm tra tin nhắn nhé!"
+        android:textSize="16sp"
+        android:textColor="#48525F"
+        android:fontFamily="@font/inter_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_arrowLeft_verifyOTP"
+        android:lineSpacingExtra="4sp"
+        android:gravity="top"/>
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comment_forgotPassword">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/edt_inputOTP1"
+                android:inputType="number"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/edittext_input_otp"
+                android:fontFamily="@font/inter_regular"
+                android:layout_marginEnd="23dp"
+                android:textSize="32dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/edt_inputOTP2"
+                android:inputType="number"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/edittext_input_otp"
+                android:layout_marginEnd="23dp"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="32dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/edt_inputOTP3"
+                android:inputType="number"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/edittext_input_otp"
+                android:layout_marginEnd="23dp"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="32dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/edt_inputOTP4"
+                android:inputType="number"
+                android:maxLength="1"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/edittext_input_otp"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="32dp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            android:text="Confirm"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_onboarding"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Resendcode"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Resend Code"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16sp"
+            android:textColor="#042628"
+            android:background="@drawable/transparent"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

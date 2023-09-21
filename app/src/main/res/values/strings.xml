@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ITCanCook</string>
+
+    <!--  Onboarding Heading title-->
+    <string name="onboarding_heading_1">Khám phá thực đơn đáp ứng đầy đủ sức khỏe!</string>
+    <string name="onboarding_heading_2">Cần gì ư? Chúng tôi có đủ!</string>
+    <string name="onboarding_heading_3">Kê nối với nhiều chuyên gia</string>
+
+    <!--    Onboarding Description-->
+    <string name="onboarding_description_1">1500+ bữa ăn tiêu chuẩn giúp bạn đủ chất mà vẫn "khỏe túi tiền"</string>
+    <string name="onboarding_description_2">Kết nối với những đối tác siêu thị ngon-bổ-rẻ</string>
+    <string name="onboarding_description_3">Bạn có thắc mắc? Hãy trò chuyện vói những đầu bếp thật nhé</string>
+
+    <!--    Onboarding button text-->
+    <string name="onboarding_button_text_1">Tiếp tục -></string>
+    <string name="onboarding_button_text_2">Bắt đầu nào!</string>
+
+    <!--    Create Account Options-->
+    <string name="link_login"><u>Đăng nhập</u></string>
+
+    <!--    Register-->
+    <string name="link_service_account"><u>Điều khoản dịch vụ</u></string>
+    <string name="link_privacy_policy"><u>Chính sách bảo mật.</u></string>
+    <string name="text_and"> &amp; </string>
+
+    <!--    New Account Setting(nas) Heading-->
+    <string name="nas_heading_1">Thông tin cơ bản</string>
+    <string name="nas_heading_2">Tình trạng sức khỏe</string>
+    <string name="nas_heading_3">Sở thích nấu ăn</string>
+    <string name="nas_heading_4">Thiết bị làm bếp</string>
+    <string name="nas_heading_5">Bếp của bạn</string>
+
+    <!--    New Account Setting(nas) Description-->
+    <string name="nas_description_1">Để đảm bảo các đề xuất từ I.T. Can Cook thật chính xác, hãy kể về bản thân nhé!</string>
+    <string name="nas_description_2">Nếu bạn thuộc một trong những nhóm đối tượng dưới đây, hãy để chúng tôi biết để đảm bảo bữa ăn phù hợp nhất cho bạn.</string>
+    <string name="nas_description_3">Hãy liệt kê những tính năng ưa thích của bạn ở đây.</string>
+    <string name="nas_description_4">Một số món ăn sẽ cần những dụng cụ làm bếp đặc biệt. Hãy điểm danh lại những thiết bị có sẵn trong bếp bạn nhé.</string>
+</resources>

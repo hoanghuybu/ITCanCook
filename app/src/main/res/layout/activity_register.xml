@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imgView_arrowLeft_register"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow___left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="120dp"
+        android:text="Tạo tài khoản"
+        android:textSize="24sp"
+        android:textColor="#0A2533"
+        android:fontFamily="@font/inter_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_arrowLeft_register">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="Họ và tên"
+            android:textSize="16sp"
+            android:textColor="#0A2533"
+            android:fontFamily="@font/inter_medium"/>
+
+        <EditText
+            android:id="@+id/edt_fullName_register"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/cutom_login_input"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/profile"
+            android:drawablePadding="12dp"
+            android:hint="Nhập tại đây.."
+            android:fontFamily="@font/inter_regular"
+            android:padding="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="Số điện thoại"
+            android:textSize="16sp"
+            android:textColor="#0A2533"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/edt_phoneNumber_register"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/cutom_login_input"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/profile"
+            android:drawablePadding="12dp"
+            android:hint="Nhập số điện thoại"
+            android:fontFamily="@font/inter_regular"
+            android:padding="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="Email"
+            android:textSize="16sp"
+            android:textColor="#0A2533"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/edt_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/cutom_login_input"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/message"
+            android:drawablePadding="12dp"
+            android:hint="Nhập email tại đây..."
+            android:fontFamily="@font/inter_regular"
+            android:padding="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="Mật Khẩu"
+            android:textSize="16sp"
+            android:textColor="#0A2533"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/edt_password_register"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/cutom_login_input"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/lock"
+            android:drawableRight="@drawable/show"
+            android:drawablePadding="12dp"
+            android:hint="Nhập mật khẩu..."
+            android:fontFamily="@font/inter_regular"
+            android:padding="16dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:text="Tiếp tục"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_onboarding"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginTop="24dp"
+            android:text="Bằng việc đăng ký, bạn đồng ý với"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="14sp"
+            android:textColor="#48525F"
+            android:textAlignment="center"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_linkServiceAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/link_service_account"
+                android:textColor="#48525F"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" &amp; "
+                android:fontFamily="@font/inter_medium"
+                android:textColor="#48525F"
+                android:textSize="14dp"
+                />
+            <TextView
+                android:id="@+id/tv_linkPrivacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/link_privacy_policy"
+                android:textColor="#48525F"
+                android:textSize="14sp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
